@@ -18,3 +18,5 @@ npm start
 ```bash
 npm run dev
 ```
+
+[![Node.js CI](https://github.com/2110781006/FHB-Assignment-Backend-Taucher-TeamF/actions/workflows/node.js.yml/badge.svg)](https://github.com/2110781006/FHB-Assignment-Backend-Taucher-TeamF/actions/workflows/node.js.yml)
