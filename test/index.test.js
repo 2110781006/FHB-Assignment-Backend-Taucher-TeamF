@@ -38,7 +38,9 @@ describe('Check if note have all properties', () => {
             assert.equal(notes[note].hasOwnProperty('date'), true);
             assert.equal(notes[note].hasOwnProperty('important'), true);
         }
-
     });
 });
+
+//stop http server
+index.httpserver.close();
     
