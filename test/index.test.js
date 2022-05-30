@@ -1,3 +1,5 @@
+/* eslint-env mocha */
+
 const assert = require('assert');     //asert lib
 const request = require('supertest'); //http assertion lib
 const index = require('../index');    //index js
@@ -41,14 +43,10 @@ describe('Check if note have all properties', () => {
 
         for(var note in notes)
         {
-            assert.equal(Object.prototype.hasOwnProperty.call(notes[note], "id"));
-            assert.equal(Object.prototype.hasOwnProperty.call(notes[note], "content"));
-            assert.equal(Object.prototype.hasOwnProperty.call(notes[note], "date"));
-            assert.equal(Object.prototype.hasOwnProperty.call(notes[note], "important"));
-            /*assert.equal(notes[note].hasOwnProperty('id'), true);
-            assert.equal(notes[note].hasOwnProperty('content'), true);
-            assert.equal(notes[note].hasOwnProperty('date'), true);
-            assert.equal(notes[note].hasOwnProperty('important'), true);*/
+            assert.equal(Object.prototype.hasOwnProperty.call(notes[note], "id"), true);
+            assert.equal(Object.prototype.hasOwnProperty.call(notes[note], "content"), true);
+            assert.equal(Object.prototype.hasOwnProperty.call(notes[note], "date"), true);
+            assert.equal(Object.prototype.hasOwnProperty.call(notes[note], "important"), true);
         }
     });
 });
